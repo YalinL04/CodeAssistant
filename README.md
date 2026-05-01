@@ -371,7 +371,7 @@ def below_zero(operations: List[int]) -> bool:
 |-------|-------|---------|
 | base |  0.457 | 0.384 |
 | SFT |  0.616  | 0.530 |
-| SFT |  0.732  | 0.634 |
+| GRPO |  0.732  | 0.634 |
 
 Experiments are conducted on 4 NVIDIA 4090.
 ## Notes
