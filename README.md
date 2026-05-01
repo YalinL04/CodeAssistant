@@ -234,16 +234,16 @@ Merge a SFT adapter into a standalone model:
 ```bash
 python scripts/merge_sft_adapter.py \
   --adapter_path outputs/sft/final \
-  --output_dir outputs/sft/merged_recovered
+  --output_dir outputs/sft/merged
 ```
 
 Merge a GRPO adapter into a standalone model:
 
 ```bash
 python scripts/merge_grpo_adapter.py \
-  --base_model_path outputs/sft/merged_recovered \
+  --base_model_path outputs/sft/merged \
   --adapter_path outputs/grpo/final \
-  --output_dir outputs/grpo/merged_recovered
+  --output_dir outputs/grpo/merged
 ```
 
 ## Configuration
