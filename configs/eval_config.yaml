@@ -1,0 +1,19 @@
+# Evaluation Configuration
+model:
+  name: "outputs/grpo/final"
+  torch_dtype: "bfloat16"
+  attn_implementation: "sdpa"
+
+generation:
+  max_new_tokens: 1024
+  temperature: 0.0
+  top_p: 1.0
+  do_sample: false
+
+evaluation:
+  datasets:
+    - "humaneval"
+    - "humaneval+"
+  num_samples: 1
+  output_dir: "outputs/eval"
+  samples_file: "outputs/eval/samples.jsonl"
