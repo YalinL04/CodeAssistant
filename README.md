@@ -301,10 +301,6 @@ Current test coverage focuses on:
 
 ## Experiment Results
 ### SFT
-HumanEval / HumanEval+ results:
-- HumanEval pass@1: 0.616
-- HumanEval+ pass@1: 0.530
-
 | Train Accuracy | Train Loss |
 |-------|-------|
 | ![img1](./img/train_acc.svg) | ![img2](./img/train_loss.svg) 
@@ -314,9 +310,9 @@ HumanEval / HumanEval+ results:
 | ![img3](./img/eval_acc.svg) | ![img4](./img/eval_loss.svg) 
 
 ### GRPO
-HumanEval / HumanEval+ results:
-- HumanEval pass@1: 0.732
-- HumanEval+ pass@1: 0.634
+| Train Reward |
+|-------|
+| ![img1](./img/train_reward.svg) |
 
 **Key Feature**
 
@@ -370,10 +366,12 @@ def below_zero(operations: List[int]) -> bool:
     return False
 ```
 
-
-| Train Reward |
-|-------|
-| ![img1](./img/train_reward.svg) |
+### Evaluation
+|  | Humaneval | Humaneval+ |
+|-------|-------|---------|
+| base |  0.457 | 0.384 |
+| SFT |  0.616  | 0.530 |
+| SFT |  0.732  | 0.634 |
 
 Experiments are conducted on 4 NVIDIA 4090.
 ## Notes
