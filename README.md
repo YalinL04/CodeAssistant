@@ -207,10 +207,10 @@ Evaluate the trained model:
 python scripts/run_eval.py --model_path outputs/grpo/merged
 ```
 
-Run inference:
+### Inference:
 
 ```bash
-python infer.py
+python infer.py --model outputs/grpo/merged --prompt "Write an algorithm to compute Fibonacci(n)."
 ```
 
 ## Utils
