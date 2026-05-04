@@ -206,6 +206,13 @@ Evaluate the trained model:
 ```bash
 python scripts/run_eval.py --model_path outputs/grpo/merged
 ```
+
+Run inference:
+
+```bash
+python infer.py
+```
+
 ## Utils
 ### Reward Sanity Check Before GRPO
 
